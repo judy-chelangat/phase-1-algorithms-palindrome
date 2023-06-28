@@ -1,8 +1,8 @@
 function reverse(word){
-const wordArray=word.split("") // splitting it into an array in order to do a reverse
-const reversedArray=wordArray.reverse() 
-const reversedWord=reversedArray.join("") //joining the reversed array into a string
-return reversedWord
+// const wordArray=word.split("") // splitting it into an array in order to do a reverse
+// const reversedArray=wordArray.reverse() 
+// const reversedWord=reversedArray.join("") //joining the reversed array into a string
+return word.split("").reverse().join("") // cleaning up the code to be more shorter
 }
 
 
@@ -11,12 +11,7 @@ function isPalindrome(word) {
   //changing the string to lowercase
   //const newString=word.replace(/[^a-zA-Z0-9]/g,"")
   const reversedWord =reverse(word)
-  if (word === reversedWord){
-    return true
-  }
-  else{
-    return false
-  }
+  return (word === reversedWord)
 }
 /* 
   Add your pseudocode here
